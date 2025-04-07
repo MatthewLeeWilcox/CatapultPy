@@ -15,7 +15,6 @@ class ofToken:
     "authorization": "Bearer " + api_token
     }
 
-
 # Create Token System
 def ofCreateToken(api_key, region = "us"):
     allowed_regions = {"us", "eu", "au", "cn"}
@@ -70,7 +69,6 @@ def ofGetAthletes(token):
    return(df)
 
 # Events Wrapper
-url = "https://connect-us.catapultsports.com/api/v6/activities/activity_id/athletes/athlete_id/events?event_types=ma_acceleration%2Cima_jump%2Cbaseball_swing"
 
 def ofGetActivityEvents(token, activity_id, athlete_id, events):
     if not isinstance(events, list):
@@ -146,7 +144,6 @@ def ofGetStats(token, params, group_by, filters):
     df = pd.DataFrame(data)
     return(df)
 
-url = "https://connect-us.catapultsports.com/api/v6/activities/activity_id/athletes/athlete_id/sensor"
 
 # Get 10hz Data
 
