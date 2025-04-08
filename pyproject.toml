@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CatapultPy"
+version = "0.0.1"
+authors = [
+  { name="Matthew Wilcox", email="matthewleewilcox@gmail.com" },
+]
+description = "A API Wrapper for Catapult Openfield System"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",  
+    "pandas",    
+    "numpy"
+]
+
+[project.urls]
+Homepage = "https://github.com/MatthewLeeWilcox/CatapultPy"
+Issues = "https://github.com/MatthewLeeWilcox/CatapultPy"

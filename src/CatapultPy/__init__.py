@@ -82,9 +82,7 @@ def ofGetActivityEvents(token, activity_id, athlete_id, events):
        for e in events:
           url += e + "%2C"
        url = url[:-3]
-    print(url)
     response = requests.get(url, headers=token.headers)
-    print(response.text)
     data = json.loads(response.text)
     df = pd.DataFrame(data)
     return(df)
@@ -101,9 +99,7 @@ def ofGetActivityEfforts(token, activity_id, athlete_id, efforts= ['acceleration
        for e in efforts:
           url += e + "%2C"
        url = url[:-3]
-    print(url)
     response = requests.get(url, headers=token.headers)
-    print(response.text)
     data = json.loads(response.text)
     df = pd.DataFrame(data)
     return(df)

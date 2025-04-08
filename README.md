@@ -27,15 +27,14 @@ pip install CatapultPy
 ### 
 
 ```
-ofCreateToken(api_key, region = "us")
-
+token = ofCreateToken(api_key, region = "us")
 ```
-Creates the token to call the API. Must include your region name being "us", "eu", "au", "cn"
+Creates the token to call the API. Must include your region name being "us", "eu", "au", "cn".
 
 ```
 ofGetActivities(token)
 ```
-Returns a pandas dataframe of all of the activities
+Returns a pandas dataframe of all of the activities.
 
 ```
 ofGetAthletes(token)
@@ -45,7 +44,7 @@ Get a Pandas Dataframe of all the athletes within a dataframe.
 ```
 ofGetParams(token)
 ```
-Return a Pandas Dataframe of all paramaters
+Return a Pandas Dataframe of all paramaters.
 
 ### Activity based Functions
 
@@ -62,12 +61,12 @@ Return a Pandas dataframe of all the periods within an activity.
 ```
 ofGetActivitiesTags(token, activity_id)
 ```
-Return a Pandas dataframe of all the tags within a activity
+Return a Pandas dataframe of all the tags within a activity.
 
 ```
 ofGetActivitiesDevices(token, acitvity_id)
 ```
-Return a Pandas Dataframe of all the devices within a activity
+Return a Pandas Dataframe of all the devices within a activity.
 
 ```
 ofGetActivityEvents(token, activity_id, athlete_id, events = ["ima_jumps", "baseball_swing"])
@@ -77,7 +76,7 @@ Return a Pandas Dataframe of all the events for a single athlete in a activity. 
 ```
 ofGetActivityEfforts(token, activity_id, athlete_id, efforts= ['acceleration', 'velocity'])
 ```
-Return a Pandas Dataframe of all the efforts for a single athlete in a activity. Effort can be acceleartion, velocity or both. It is defaulted as both
+Return a Pandas Dataframe of all the efforts for a single athlete in a activity. Effort can be acceleartion, velocity or both. It is defaulted as both.
 
 ### Aggragated data
 
@@ -95,12 +94,12 @@ ofGetStats(token,
             })
 ```
 
-Returns a Pandas Dataframe of aggragated stats. params and group_by must be inputed as lists. Filters must be imputed as a dicitonary, values must be implemented as a list of activity_id's
+Returns a Pandas Dataframe of aggragated stats. params and group_by must be inputed as lists. Filters must be imputed as a dicitonary, values must be implemented as a list of activity_id's.
 
 ### 10Hz Data
 
 ```
-ofGetActivity10hz
+ofGetActivity10hz(token, activity_id, athlete_id)
 ```
 
 Returns a Pandas Dataframe of 10 Hz data of an athlete from within an activity.
