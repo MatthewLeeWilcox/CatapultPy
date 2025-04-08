@@ -4,6 +4,16 @@ A lightweight Python wrapper for the Catapult Sports OpenField API. This package
 
 ---
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Basic Functions](#basic-functions)
+- [Activity-Based Functions](#activity-based-functions)
+- [Aggregated Data](#aggregated-data)
+- [10Hz Data](#10hz-data)
+
+---
+
 ## Installation
 
 Install via pip:
