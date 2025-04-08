@@ -1,8 +1,12 @@
 # CatapultPy 
-A basic API wrapper for Catapult Sports Openfield Data. Should be similar to CatapultR. 
 
+A lightweight Python wrapper for the Catapult Sports OpenField API. This package is modeled after `CatapultR` and is designed to make it easier to pull data into Python for analysis.
 
-## Instalation
+---
+
+## Installation
+
+Install via pip:
 
 ```
 pip install CatapultPy
@@ -89,6 +93,6 @@ Returns a Pandas Dataframe of aggragated stats. params and group_by must be inpu
 ofGetActivity10hz
 ```
 
-Returns a Pandas Dataframe of 10 Hz data of an athlete from within a Activity
+Returns a Pandas Dataframe of 10 Hz data of an athlete from within an activity.
 
 
